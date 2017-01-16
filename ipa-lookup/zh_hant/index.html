@@ -2,29 +2,29 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <title>Svenska IPA Lookup</title>
+    <title>Chinese IPA Lookup - 中文國際音標查詢</title>
     <script src="../js/pace.min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="https://dohliam.github.io/dropin-minimal-css/vendor/motherplate.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/ipa.css"/>
     <link rel="stylesheet" type="text/css" href="../css/auto-complete.css"/>
     <link rel="stylesheet" type="text/css" href="../css/dataurl.css"/>
-    <script src="../data/sv.js" type="text/javascript"></script>
+    <script src="../data/zh_hant.js" type="text/javascript"></script>
     <script src="../js/ipa.js" type="text/javascript"></script>
     <script src="../js/auto-complete.min.js" type="text/javascript"></script>
     <script type="text/javascript">
       window.onload = function() { document.getElementById('input').focus(); }
-      lang = "sv";
+      lang = "zh_hant";
       var keys = [];
       for(var k in ipa) keys.push(k);
     </script>
   </head>
   <body>
     <center>
-      <h1><a href="https://open-dict-data.github.io/ipa-lookup/">Svenska IPA Lookup</a></h1>
-      <h2>Search for IPA pronunciations in Swedish</h2>
+      <h1><a href="https://open-dict-data.github.io/ipa-lookup/">中文國際音標查詢</a></h1>
+      <h2>Chinese IPA Lookup - Search for IPA pronunciations in Mandarin (Traditional)</h2>
       <form action="#" onsubmit="show_ipa()">
-        <input type="text" size="35" id="input" placeholder="Sök" value="" />
-        <input type="submit" class="btn" value="Slå upp!" />
+        <input type="text" size="35" id="input" placeholder="搜索" value="" title="Keyword" />
+        <input type="submit" class="btn" value="查詢!" title="Get IPA!" />
         <div id="infolink"><a href="https://open-dict-data.github.io/ipa-lookup">About</a> · <a href="https://open-dict-data.github.io">Github</a> · <a href="https://github.com/open-dict-data/ipa-dict">IPA dictionary project</a></div>
       </form>
       <div id="output">&nbsp;</div>
