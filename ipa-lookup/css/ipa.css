@@ -1,16 +1,8 @@
-a {
-  text-decoration: none;
+html {
+  font-size: large;
 }
 #output {
-  font-style: italic;
-}
-h1 a {
-  color: #000;
-}
-h2 {
-  font-size: 24px;
-  color: gray;
-  line-height: 1;
+  margin-top: 1em;
 }
 #infolink {
   line-height: 2.5;
